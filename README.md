@@ -9,16 +9,16 @@ The feed is **publicly readable but cryptographically impossible to forge**: eve
 ## How it works
 
 ```
-┌─────────────────────────────┐         ┌──────────────────────────────┐
-│   THE FACTORY (isolated)    │         │   EACH NimOS (consumer)      │
-│                             │  push   │                              │
-│   1. fetch public sources   │ ──────► │   · embedded base feed       │
-│   2. aggregate + dedup      │ GitHub  │   · refresh every ~2 days    │
-│   3. build signed manifest  │ public  │   · verify Ed25519 signature │
-│   4. publish                │ ◄────── │   · validate per-file hashes │
-│                             │  pull   │   · observe → then block     │
-│   PRIVATE KEY lives here    │         │   · keep N versions (rollback)│
-└─────────────────────────────┘         └──────────────────────────────┘
+┌─────────────────────────────┐         ┌────────────────────────────────┐
+│   THE FACTORY (isolated)    │         │   EACH NimOS (consumer)        │
+│                             │  push   │                                │
+│   1. fetch public sources   │ ──────► │   · embedded base feed         │
+│   2. aggregate + dedup      │ GitHub  │   · refresh every ~2 days      │
+│   3. build signed manifest  │ public  │   · verify Ed25519 signature   │
+│   4. publish                │ ◄────── │   · validate per-file hashes   │
+│                             │  pull   │   · observe → then block       │
+│   PRIVATE KEY lives here    │         │   · keep N versions (rollback) │
+└─────────────────────────────┘         └────────────────────────────────┘
         private key                            public key embedded
 ```
 
