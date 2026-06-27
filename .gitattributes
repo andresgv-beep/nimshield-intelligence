@@ -1,0 +1,4 @@
+# El feed está FIRMADO sobre los bytes exactos (finales de línea LF).
+# Git NO debe tocar los EOL de estos ficheros, o la firma/SHA-256 fallarían.
+/latest/** -text
+/versions/** -text

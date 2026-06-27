@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "feed_version": 1,
+  "generated_at": "2026-06-27T22:43:06Z",
+  "files": [
+    {
+      "name": "blocklist_ipv4.txt",
+      "type": "blocklist_ip",
+      "sha256": "1e064780047e1f80992331711d251b8aac2d46ad05c74e5713d1233601fa2b8b",
+      "entries": 26275,
+      "action": "observe"
+    },
+    {
+      "name": "blocklist_ipv6.txt",
+      "type": "blocklist_ip",
+      "sha256": "540de69347dcefd015ff320ee94fca1317c9408fb7073536d380946a789c992e",
+      "entries": 131,
+      "action": "observe"
+    }
+  ]
+}

@@ -74,7 +74,7 @@ A tampered manifest — even a single changed byte — fails verification and is
 ### Public key
 
 ```
-(to be published here once the production key is generated)
+NPE6bR2BvAefcDo+v6dtiZZcj8IOoK4M8fwnMOUDJ+0=
 ```
 
 ## Safety model
